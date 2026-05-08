@@ -1,0 +1,24 @@
+body {
+	font-family: Arial;
+}
+
+.important {
+	font-weight: bold;
+	color: purple;
+}
+
+#landing {
+	text-align: center;
+}
+landing {
+	text-align: center;
+	font-weight: lighter;
+	font-size: 14px;
+}
+
+img.selected{
+    transform: scale(2);
+    transition: transform 0.3s;
+}
+
+

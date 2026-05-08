@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="style.css">
+    <title>2015 Street Tree Census</title>
+    <script src="d3.v7.min.js"></script>
+
+</head>
+<body>
+
+    <div id="landing">
+        <h1 class="important">2015 Street Tree Census</h1>
+    </div>
+
+    <div id="landing">
+        <h3>Street tree data from the TreesCount! 2015 Street Tree Census, conducted by volunteers and staff organized by NYC Parks & Recreation and partner organizations. Tree data collected includes tree species, diameter and perception of health. Accompanying blockface data is available indicating status of data collection and data release citywide.
+
+The 2015 tree census was the third decadal street tree census and largest citizen science initiative in NYC Parks’ history. Data collection ran from May 2015 to October 2016 and the results of the census show that there are 666,134 trees planted along NYC's streets. The data collected as part of the census represents a snapshot in time of trees under NYC Parks' jurisdiction.
+
+
+</h3>
+    </div>
+    <div id="landing">
+        <h3>
+The official source is the NYC Open Data portal: <a href="https://data.cityofnewyork.us/Environment/2015-Street-Tree-Census-Tree-Data/uvpi-gqnh/explore/query/SELECT%0A%20%20%60tree_id%60%2C%0A%20%20%60block_id%60%2C%0A%20%20%60created_at%60%2C%0A%20%20%60tree_dbh%60%2C%0A%20%20%60stump_diam%60%2C%0A%20%20%60curb_loc%60%2C%0A%20%20%60status%60%2C%0A%20%20%60health%60%2C%0A%20%20%60spc_latin%60%2C%0A%20%20%60spc_common%60%2C%0A%20%20%60steward%60%2C%0A%20%20%60guards%60%2C%0A%20%20%60sidewalk%60%2C%0A%20%20%60user_type%60%2C%0A%20%20%60problems%60%2C%0A%20%20%60root_stone%60%2C%0A%20%20%60root_grate%60%2C%0A%20%20%60root_other%60%2C%0A%20%20%60trunk_wire%60%2C%0A%20%20%60trnk_light%60%2C%0A%20%20%60trnk_other%60%2C%0A%20%20%60brch_light%60%2C%0A%20%20%60brch_shoe%60%2C%0A%20%20%60brch_other%60%2C%0A%20%20%60address%60%2C%0A%20%20%60zipcode%60%2C%0A%20%20%60zip_city%60%2C%0A%20%20%60cb_num%60%2C%0A%20%20%60borocode%60%2C%0A%20%20%60boroname%60%2C%0A%20%20%60cncldist%60%2C%0A%20%20%60st_assem%60%2C%0A%20%20%60st_senate%60%2C%0A%20%20%60nta%60%2C%0A%20%20%60nta_name%60%2C%0A%20%20%60boro_ct%60%2C%0A%20%20%60state%60%2C%0A%20%20%60latitude%60%2C%0A%20%20%60longitude%60%2C%0A%20%20%60x_sp%60%2C%0A%20%20%60y_sp%60%2C%0A%20%20%60council_district%60%2C%0A%20%20%60census_tract%60%2C%0A%20%20%60bin%60%2C%0A%20%20%60bbl%60%0AWHERE%20caseless_one_of%28%60spc_common%60%2C%20%22spruce%22%29/page/filter">NYC 2015 Street Tree Census Dataset</a>
+
+
+</h3>
+    
+<div id="landing">
+        <h1 >Summary Visualizations</h31>
+    </div>
+<div id="summary"> 
+    <img src="boroughSummary.png" style="width: 20%;" alt="Borough Frequency">
+
+    <img src="healthSummary.png" style="width: 20%;" alt="Health Frequency">
+
+    <img src="latitudeSummary.png" style="width: 20%;" alt="Latitude Stats">
+
+    <img src="root_stoneSummary.png" style="width: 20%;" alt="Root Stone Frequency">
+
+    <img src="stewardSummary.png" style="width: 20%;" alt="Steward Frequency">
+
+    <img src="tree_DBHSummary.png" style="width: 20%;" alt="Tree DBH stats">
+</div>
+
+<div id="landing">
+        <h3>Several important biases and limitations are present in the dataset. First, much of the data was collected by volunteers rather than trained arborists, introducing possible inconsistencies in species identification and health assessment. NYC Parks reported that volunteers achieved high accuracy overall, but subjective measures such as “good,” “fair,” or “poor” tree health remain open to interpretation.
+
+
+</h3>
+    </div>
+
+
+
+ <div id="landing">
+        <h1 >Hypotheses</h1>
+    </div>
+
+<div id="summary"> 
+    <img src="healthXtree_dbhSummary.png" style="width: 50%;" alt="healthXtreeDBH Frequency">
+    <h3>hypothesis: Trees with poor health tend to have a smaller diameter
+
+</h3>
+    <img src="root_stoneXhealthSummary.png" style="width: 50%;" alt="healthXtreeDBH Frequency">
+    <h3>hypothesis: Trees with Good health tend to not have root stone
+
+</h3>
+    <img src="boroughXtree_dbhSummary.png" style="width: 50%;" alt="healthXtreeDBH Frequency">
+
+    <h3>hypothesis: Manhattan has skinny trees
+
+</h3>
+</div>
+<script src="index.js"></script>
+    
+</body>
+</html>
+
